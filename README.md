@@ -25,6 +25,7 @@ It is all what you need in one place to provide a free and meaningful learning p
 ## Acknowledgement
 here is some resources that we find helpful  
 - [kandi](https://kandi.openweaver.com/home)
+- [CSS Template](https://www.free-css.com/free-css-templates/page263/mind)
 
 ## Contributing 
 Pull requests are welcome.  
