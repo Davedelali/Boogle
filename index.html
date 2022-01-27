@@ -31,6 +31,40 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <!-- body -->
+<style>
+  .left, .right {
+    float: left;
+    width: 20%; /* The width is 20%, by default */
+  }
+  
+  .main {
+    float: left;
+    width: 60%; /* The width is 60%, by default */
+  }
+  
+  /* Use a media query to add a breakpoint at 800px: */
+  @media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+  
+  </style>
+  <script>
+    var x = document.getElementById("demo");
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude +
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
 
 <body class="main-layout">
   <!-- loader  -->
@@ -71,7 +105,7 @@
                  </div>
                </div> 
                <div class="mean-last">
-                       <a href="www.pdfdrive.com"><img src="images/search_icon.png" alt="#" /></a> <a href="#">login/sing up</a></div>              
+                       <a href="log.html"><img src="images/search_icon.png" alt="#" /></a> <a href="log.html">login/sing up</a></div>              
              </div>
            </div>
          </div>
@@ -490,7 +524,7 @@
               </div>
               <div class="copyright">
                 <div class="container">
-                  <p>Copyright © 2019 Design by <a href="">Team Easyness </a></p>
+                  <p>Copyright © 2022 Design by <a href="www.easynessmall.com">Team Easyness </a></p>
                 </div>
               </div>
             </div>
